@@ -183,15 +183,13 @@ body {
 .header-contact-text {
   fill: var(--secondary-text-color);
 }
-.header-contact-text:hover,
-.header-contact-text:focus {
-  fill: var(--accent-color);
-}
+
 .header-contact-text .contact-mail:hover,
 .header-contact-text .contact-mail:focus,
 .header-contact-text .contact-tel:hover,
 .header-contact-text .contact-tel:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 .contact-mail,
 .contact-tel {
@@ -346,10 +344,9 @@ body {
 }
 .team-list-item {
   background-color: var(--general-wight);
-  outline: 2px solid var(--frame-color);
-  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-list-title {
   font-weight: 500;
@@ -403,6 +400,7 @@ body {
   padding-bottom: 94px;
 }
 .customers-title {
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
@@ -410,37 +408,31 @@ body {
 }
 .customers-list {
   display: flex;
-  align-items: center;
-  margin-top: 50px;
   gap: 30px;
 }
-.customers-list-link {
-  display: block;
-  width: 170px;
-  height: 92px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: var(--svg-gray);
-  border-radius: 4px;
-}
 .customers-list-item {
-  width: 170px;
-  height: 92px;  
+  width: 172px;
+  height: 92px;
 }
-.customers-list-link{
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   height: 100%;
-}
-.customers-text {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   fill: var(--svg-gray);
 }
-.customers-text:hover,
-.customers-text:focus {
-  fill: #2196f3;
+.customers-link-text {
 }
 .customers-list-link:hover,
-.customers-list-link:focus {
+.customers-list-link:focus,
+.customers-list-item:hover {
   border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 /* _________________footer_______________ */
 
@@ -544,14 +536,20 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-
   text-align: left;
   margin-top: 50px;
 }
-.example-link {
-}
+
 .example-list li {
-  outline: 2px solid var(--frame-color);
+  box-sizing: border-box;
+  border: 1px solid var(--frame-color);
+  width: 370px;
+  height: 404px;
+}
+
+.example-link {
+  width: 100%;
+  height: 100%;
 }
 .example-list li:hover,
 .example-list li:focus {
@@ -614,7 +612,7 @@ body {
   padding-left: 22px;
   padding-right: 22px;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 16px;
   line-height: calc(26 / 16);
   letter-spacing: 0.03em;
   color: var(--general-black);
