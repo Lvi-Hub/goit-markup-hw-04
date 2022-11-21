@@ -349,7 +349,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-item img{
+.team-list-item img {
   display: block;
 }
 .team-list-title {
@@ -565,14 +565,13 @@ body {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;  
+  height: 100%;
 }
-.example-link img{
+.example-link img {
   display: block;
 }
 .example-link:hover,
 .example-link:focus {
-  border: 0px solid var(--frame-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
